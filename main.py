@@ -25,6 +25,10 @@ if __name__ == '__main__':
 
     fig = data.retention_rates_plot(programs)
 
+    ''' Open Figure in browser '''
+    # data.show_fig()
+
+    ''' Save Figure to plotly chart studio (requires api key)'''
     ps.set_plotly_api('plotly-api.txt')
     ps.post_plot(fig, 'retention_rates')
 
